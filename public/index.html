@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+        <title>My Weather App</title>
+    </head>
+
+    <body> 
+        <main>
+            <input name="city" type="text" id="cityInput">
+            <button onclick=getWeather()>Get Weather</button>
+            <button onclick=startUp() type="button">Current Location</button>
+                <!--<button onclick=getWeather('London') type="button">London</button>
+                <button onclick=getWeather('Washington') type="button">Washington</button>
+                <button onclick=getWeather('Tokyo') type="button">Tokyo</button>
+                <button onclick=getWeather('Hanoi') type="button">Hanoi</button>-->
+            <div class="section">
+                <h2>Weather App</h2>
+                <p> <!--My latitude: <span id="lat"></span></br>
+                    My longitude: <span id="long"></span></br>-->
+                    Temp: <span id="temp"></span></br>
+                    Feels Like: <span id="feels_like"></span></br>
+                    Description: <span id="description"></span>
+                </p>
+             </div>
+        </main>
+
+        <script src="main.js"> </script>
+
+    </body>
+</html>
