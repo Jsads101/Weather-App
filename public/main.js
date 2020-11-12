@@ -1,4 +1,3 @@
-
 startUp();
 
 async function startUp(){
@@ -19,19 +18,19 @@ async function startUp(){
         document.getElementById("description").textContent = description;
         if(description.includes("rain")){
             console.log("rain")
-            document.getElementById("weathericon").src="rain.svg";
+            document.getElementById("weathericon").src="drop.png";
         } else if(description.includes("cloud")){
             console.log("cloud")
-            document.getElementById("weathericon").src="cloud.svg";
-        } else if(description.includes("sun")){
+            document.getElementById("weathericon").src="cloud.png";
+        } else if((description.includes("sun"))(description.includes("clear"))){
             console.log("sun")
-            document.getElementById("weathericon").src="sun.svg";
+            document.getElementById("weathericon").src="sun.png";
         } else if(description.includes("thunder")){
             console.log("cloud")
-            document.getElementById("weathericon").src="thunder.svg";
+            document.getElementById("weathericon").src="flash.png";
         } else if(description.includes("snow")){
             console.log("cloud")
-            document.getElementById("weathericon").src="snowy.svg";
+            document.getElementById("weathericon").src="snowflake.png";
         }
       })
     });
@@ -57,22 +56,20 @@ async function startUp(){
             document.getElementById("description").textContent = description;
             if(description.includes("rain")){
                 console.log("rain")
-                document.getElementById("weathericon").src="rain.svg";
+                document.getElementById("weathericon").src="drop.png";
             } else if(description.includes("cloud")){
                 console.log("cloud")
-                document.getElementById("weathericon").src="cloud.svg";
-            } else if(description.includes("sun")){
+                document.getElementById("weathericon").src="cloud.png";
+            } else if((description.includes("sun"))||(description.includes("clear"))){
                 console.log("sun")
-                document.getElementById("weathericon").src="sun.svg";
+                document.getElementById("weathericon").src="sun.png";
             } else if(description.includes("thunder")){
                 console.log("cloud")
-                document.getElementById("weathericon").src="thunder.svg";
+                document.getElementById("weathericon").src="flash.png";
             } else if(description.includes("snow")){
                 console.log("cloud")
-                document.getElementById("weathericon").src="snowy.svg";
+                document.getElementById("weathericon").src="snowflake.png";
             }
                 
               })
             };
-
-   
