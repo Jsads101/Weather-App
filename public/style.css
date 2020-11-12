@@ -23,7 +23,16 @@ main {
   transform: translate(-50%, -50%);
 }
 
-.section{
+.section-one {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.section-two{
+  font-size: 1.5rem;
   padding: 1rem;
   border: 1px solid #a2a2a2;
   background-color: #f4f4f4;
@@ -40,13 +49,19 @@ button {
     background-color: #f4f4f4;
     opacity: 1 !important;
     padding: 0.5rem;
-    margin: 0.7rem;
-    font-size: 1.2rem;
+    
+}
+
+img {
+    width:70%;
+}
+
+input {
+    padding: 0.5rem;
 }
 
 
-button:hover{
-	transform: scale(1.3);
-	transition-duration: 0.5s;
+#or {
+    vertical-align: middle;
+    font-size: larger;
 }
-

@@ -9,17 +9,22 @@
 
     <body> 
         <main>
-            <input name="city" type="text" id="cityInput">
-            <button onclick=getWeather()>Get Weather</button>
+            <div class="section-one">
+            <div>
+                <input name="cityInput" id="cityInput" type="text" placeholder="Input City"/>
+                <input type="button" onclick=getWeather() value="Search for City" />
+            </div>
+            <div id="or"> or </div>
             <button onclick=startUp() type="button">Current Location</button>
-                <!--<button onclick=getWeather('London') type="button">London</button>
-                <button onclick=getWeather('Washington') type="button">Washington</button>
-                <button onclick=getWeather('Tokyo') type="button">Tokyo</button>
-                <button onclick=getWeather('Hanoi') type="button">Hanoi</button>-->
-            <div class="section">
-                <h2>Weather App</h2>
-                <p> <!--My latitude: <span id="lat"></span></br>
-                    My longitude: <span id="long"></span></br>-->
+            </div>
+            
+            <div class="section-two">
+                <h2 id="location"></h2>
+                <p> Latitude: <span id="lat"></span></br>
+                    Longitude: <span id="long"></span></br>
+                </p>
+                <img src="" id="weathericon"/>
+                <p> 
                     Temp: <span id="temp"></span></br>
                     Feels Like: <span id="feels_like"></span></br>
                     Description: <span id="description"></span>
