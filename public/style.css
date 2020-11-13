@@ -59,11 +59,37 @@ image {
 input {
     padding: 0.5rem;
     font-size: 1rem;
-
 }
 
 
 #or {
     vertical-align: middle;
     font-size: larger;
+}
+
+@media (max-width: 1000px) {
+	input {
+        width: 40%;
+    }
+
+    #cityInputDiv {
+        padding: 0;
+    }
+    
+    button {
+        font-size: 0.8rem;
+    }
+    
+}
+
+@media (max-width: 700px) {
+	.section-one {
+        display: block;
+    }
+
+    #cityInputButton {
+        width: 50%;
+        font-size: 0.8rem;
+    }
+    
 }
